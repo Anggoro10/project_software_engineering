@@ -31,7 +31,7 @@
         /* Section Logo & Teks - Responsive Flex */
         .logo-section {
             display: flex;
-            flex-direction: row; /* Default: menyamping */
+            flex-direction: row;
             align-items: center;
             justify-content: center;
             gap: 20px;
@@ -40,7 +40,7 @@
         }
 
         .brand-text {
-            font-size: clamp(24px, 5vw, 40px); /* Ukuran font fleksibel */
+            font-size: clamp(24px, 5vw, 40px);
             font-weight: 800;
             letter-spacing: 4px;
             color: #121b33;
@@ -48,20 +48,23 @@
         }
 
         .center-logo {
-            width: clamp(120px, 30vw, 200px); /* Ukuran logo fleksibel */
+            width: clamp(120px, 30vw, 200px);
             height: auto;
             filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.4));
         }
 
-        /* Tombol START */
+        /* Tombol START (Sudah diupdate menjadi tag <a>) */
         .start-button {
             background-color: #ffffff;
             color: #101835;
             font-size: clamp(18px, 4vw, 24px);
             font-weight: bold;
             text-transform: uppercase;
+            text-decoration: none; /* Menghilangkan garis bawah link */
+            display: inline-block; /* Agar padding berfungsi dengan benar */
+            text-align: center;
             border: none;
-            padding: 15px 15%; /* Padding lebar relatif */
+            padding: 15px 15%; 
             min-width: 200px;
             border-radius: 50px;
             cursor: pointer;
@@ -78,7 +81,7 @@
         /* --- RESPONSIVE BREAKPOINT (HP) --- */
         @media (max-width: 600px) {
             .logo-section {
-                flex-direction: column; /* Teks & Logo jadi tumpuk di HP */
+                flex-direction: column;
                 gap: 10px;
             }
 
@@ -87,7 +90,7 @@
             }
 
             .start-button {
-                width: 80%; /* Tombol lebih lebar di layar kecil */
+                width: 80%;
                 padding: 12px 0;
             }
         }
@@ -105,7 +108,7 @@
             <span class="brand-text">WISE</span>
         </div>
 
-        <button class="start-button">START</button>
+        <a href="../homePage/homepage.html" class="start-button">START</a>
 
     </div>
 
