@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000d33; /* Warna dongker background */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header & Icon */
+.top-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.circle-white {
+    background: white;
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.circle-white img {
+    width: 35px;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Summary Card */
+.fuel-summary-card {
+    background: #f0f4ff; /* Putih kebiruan */
+    border-radius: 40px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.fuel-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.value {
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.unit {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Bento Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tall {
+    grid-row: span 2; /* Kartu memanjang ke bawah */
+    justify-content: flex-start;
+}
+
+.card-label {
+    color: #000;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-content.row {
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Utility Colors & Text */
+.color-blue { color: #1a3a8a; }
+.color-red { color: #d32f2f; }
+.font-black { font-weight: 900; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.brand-logo { width: 50px; }
+.car-icon { width: 60px; margin-top: 10px; }
+.icon-small { width: 30px; }
+.icon-brand { width: 40px; }
+
+.brand-name { font-weight: 700; font-size: 0.9rem; }
+.model-name { font-weight: 700; font-size: 1rem; }
+.value-text { font-size: 1.2rem; font-weight: 900; }
+
+.centered {
+    height: 100%;
+    justify-content: center;
+}
