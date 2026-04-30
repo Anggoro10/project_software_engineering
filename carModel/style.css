@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #000929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.phone-screen {
+    width: 375px;
+    height: 812px;
+    background-color: #000929; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    padding: 60px 30px 30px 30px;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+.header-content p {
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.white-circle {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+}
+
+.white-circle img {
+    width: 50px;
+    height: auto;
+}
+
+.instruction-text {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.selection-panel {
+    background-color: white;
+    border-radius: 30px; 
+    margin: 0 20px 20px 20px; 
+    flex: 1;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+}
+
+.model-btn {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 100px;
+    padding: 14px 22px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.model-btn:hover {
+    border-color: #000929;
+    background-color: #f9f9f9;
+}
+
+.model-btn:active {
+    transform: scale(0.98);
+}
+
+.selection-panel::-webkit-scrollbar {
+    width: 4px;
+}
+.selection-panel::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
